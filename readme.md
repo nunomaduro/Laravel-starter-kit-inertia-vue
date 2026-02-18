@@ -37,7 +37,7 @@ This isn't just another Laravel boilerplate—it's a statement that PHP applicat
 
 ## Getting Started
 
-> **Requires [PHP 8.4+](https://php.net/releases/), [Bun](https://bun.sh) and a code coverage driver like [xdebug](https://xdebug.org/docs/install)**.
+> **Requires [PHP 8.5+](https://php.net/releases/), [Bun](https://bun.sh) and a code coverage driver like [xdebug](https://xdebug.org/docs/install)**.
 
 Create your type-safe Laravel application using [Composer](https://getcomposer.org):
 
