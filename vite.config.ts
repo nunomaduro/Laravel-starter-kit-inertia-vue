@@ -10,7 +10,7 @@ export default defineConfig({
             typeAware: true,
             typeCheck: true,
         },
-        plugins: ["eslint", "typescript", "unicorn", "oxc", "vue"],
+        plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'vue'],
     },
     fmt: {
         printWidth: 80,
@@ -20,32 +20,38 @@ export default defineConfig({
         singleQuote: true,
         overrides: [
             {
-                files: ["**/*.yml"],
+                files: ['**/*.yml'],
                 options: {
                     tabWidth: 2,
                 },
             },
         ],
         sortTailwindcss: {
-            stylesheet: "resources/css/app.css",
+            stylesheet: 'resources/css/app.css',
         },
         sortImports: {
-            groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+            groups: [
+                'builtin',
+                'external',
+                'internal',
+                'parent',
+                'sibling',
+                'index',
+            ],
             newlinesBetween: false,
         },
-        $schema: "./node_modules/oxfmt/configuration_schema.json",
         ignorePatterns: [
-            "resources/js/components/ui/*",
-            "resources/views/mail/*",
-            "resources/js/actions/*",
-            "resources/js/routes/*",
-            "resources/js/wayfinder/*",
+            'resources/js/components/ui/*',
+            'resources/views/mail/*',
+            'resources/js/actions/*',
+            'resources/js/routes/*',
+            'resources/js/wayfinder/*',
         ],
     },
     plugins: [
         laravel({
-            input: ["resources/js/app.ts"],
-            ssr: "resources/js/ssr.ts",
+            input: ['resources/js/app.ts'],
+            ssr: 'resources/js/ssr.ts',
             refresh: true,
         }),
         tailwindcss(),
